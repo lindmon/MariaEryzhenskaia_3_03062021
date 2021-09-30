@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/sass/main.css">
+    <script src="https://kit.fontawesome.com/efab334043.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+        </style>
 </head>
 <body>
     <header>
         <nav>
             <img class="logo-header" src="/img/ohmyfood@2x.svg" alt="logo of the OhMyFood">
-            <div class="location"><p>Paris, Bellevile</p></div>
+            <div class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><p>Paris, Belleville</p></div>
         </nav>
     </header>
     <section class="presentation">
         <h1>Réservez vos menus qui vous convient</h1>
         <p>Découvrez les restaurants d'exception, séléctionnés par nos soins.</p>
-        <a href="#">Explorer nos restaurants</a>
+        <a href="#restaurants">Explorer nos restaurants</a>
     </section>
     <section class="stages">
         <h1>Fonctionnement</h1>
@@ -26,8 +34,10 @@
     <li>Composez votre menu</li>
     <li>Dégustez au restaurant</li>
 </ol>
+
+
     </section>
-    <section class="restaurants">
+    <section class="restaurants" id="restaurants">
         <h1>Restaurants</h1>
         <div class="card-resto">
             <a href="#">
@@ -76,7 +86,7 @@
     <li><a href="#"><strong>Proposer un restaurant</strong> </a></li>
     <li><a href="#"><strong>Devenir partenaire</strong> </a></li>
     <li><a href="#">Mentions légales</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
 </ul>
 </footer>
 </body>

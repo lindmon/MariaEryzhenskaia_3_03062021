@@ -1,0 +1,21 @@
+nav  {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-header {
+    height: 9rem;
+}
+.location{
+
+    font-size: 2rem;
+    p{
+        display: inline-block;
+    }
+    i{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}

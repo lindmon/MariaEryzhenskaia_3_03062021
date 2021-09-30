@@ -1,1 +1,94 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/*Colors */
+/*Shadow*/
+nav {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-header {
+  height: 9rem;
+}
+
+.location {
+  font-size: 2rem;
+}
+
+.location p {
+  display: inline-block;
+}
+
+.location i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  background-color: #F6F6F6;
+}
+
+.presentation h1, .presentation p, .presentation a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.presentation a {
+  color: white;
+  width: 269px;
+  height: 71px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 50px;
+  -webkit-box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.25);
+  padding-top: 2.3rem;
+}
+/*# sourceMappingURL=main.css.map */
