@@ -51,6 +51,11 @@ a {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
+/*Presentation section*/
 .presentation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,8 +92,239 @@ a {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 50px;
-  -webkit-box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
   padding-top: 2.3rem;
+}
+
+/*Stages section*/
+.stages {
+  width: 80%;
+  margin: 3rem auto 2rem auto;
+}
+
+.stages h2 {
+  width: 15%;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+ol {
+  width: 21%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  counter-reset: compteList;
+}
+
+ol li::before {
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  background-color: #9356DC;
+  counter-increment: compteList 1;
+  content: counter(compteList) " ";
+  position: absolute;
+  left: -10px;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+ol li {
+  width: 322px;
+  height: 70px;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding-top: 2.2rem;
+  padding-left: 3rem;
+  position: relative;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+ol li i {
+  color: #7e7e7e;
+  margin-right: 2rem;
+}
+
+ol li i:hover {
+  color: #9356DC;
+}
+
+ol li:hover {
+  background-color: #F5EDFF;
+}
+
+/*Restaurants section*/
+.restaurants {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 80%;
+  margin: auto;
+  background-color: #F6F6F6;
+}
+
+.restaurants h2 {
+  display: block;
+  width: 15%;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+.container-resto {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-resto {
+  background-color: white;
+  border-radius: 20px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 2rem;
+  position: relative;
+}
+
+.card-resto .label-new {
+  position: absolute;
+  z-index: 1;
+  font-size: 1.7rem;
+  width: 80px;
+  height: 30px;
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 0.5rem;
+  top: 10px;
+  left: 246px;
+  border-radius: 2px;
+}
+
+.card-resto img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 338px;
+  height: 173px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.text-card {
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 2rem;
+}
+
+.text-card p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-card h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.card-buttom {
+  width: 338px;
+  height: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-buttom .like {
+  font-size: 3.5rem;
+  margin-right: 2rem;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-footer {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  margin-left: 2rem;
+  font-size: 2.6rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 80%;
+  margin: auto;
+  background-color: #353535;
+}
+
+footer ul {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer a {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+
+footer a strong {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+footer i {
+  color: white;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+}
+
+footer li:nth-child(2) i {
+  -webkit-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+  margin-right: 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+/*Presentation section*/
+
 .presentation {
     display: flex;
     flex-direction: column;
@@ -21,5 +23,145 @@
         box-shadow:$box-shadow;
         padding-top: 2.3rem;
         
+    }
+}
+
+/*Stages section*/
+.stages{
+    width: 80%;
+    margin: 3rem auto 2rem auto;
+}
+.stages h2{
+    width: 15%;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+ol {
+    width: 21%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+list-style-type: none;
+counter-reset: compteList;
+    li::before {
+        text-align: center;
+        color: white;
+        border-radius: 50px;
+        margin-right: 3rem;
+        font-size: 1.5rem;
+        background-color: $primary;
+        counter-increment: compteList 1;
+        content: counter(compteList) " ";
+        position: absolute;
+        left: -10px;
+        line-height: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    li{
+        width: 322px;
+        height: 70px;
+        background-color: $grey-main;
+        box-shadow: $box-shadow;
+        border-radius: 20px;
+        padding-top: 2.2rem;
+        padding-left: 3rem;
+        position: relative;
+        margin: 1rem;
+        cursor: pointer;
+        i {
+            color:$grey-icons;
+            margin-right: 2rem;
+            &:hover {
+                color: $primary;
+            }
+        }
+        &:hover {
+            background-color: $touch-active;
+        }
+    }  
+}
+/*Restaurants section*/
+
+.restaurants{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 80%;
+    margin: auto;  
+    background-color: $grey-main;
+    h2{
+        display: block;
+        width: 15%;
+        margin: auto;
+        margin-bottom: 2rem;
+        text-align: start;
+    }
+}   
+.container-resto{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card-resto{
+    background-color: white;
+    border-radius: 20px;
+    display: inline-block;
+    width: auto;
+    height:auto;
+    margin: 2rem;
+    position: relative;
+    .label-new{
+        position: absolute;
+        z-index: 1;
+        font-size: 1.7rem;
+        width: 80px;
+        height: 30px;
+        color: #008766;
+        background-color: #99E2D0;
+        padding: 0.5rem;
+        top: 10px;
+        left: 246px;
+        border-radius: 2px;
+    }
+}
+.card-resto img{
+    object-fit: cover;
+    width: 338px;
+    height:173px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.text-card{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 2rem;
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h3{
+        font-size:2rem;
+        font-weight: normal;
+    }
+}
+.card-buttom{
+    width: 338px;
+    height:78px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .like{
+        font-size: 3.5rem;
+        margin-right: 2rem;
+        background: -webkit-linear-gradient($primary,$secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     }
 }

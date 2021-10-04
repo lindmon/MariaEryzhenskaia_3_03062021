@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
     <link rel="stylesheet" href="/sass/main.css">
@@ -19,7 +19,7 @@
     <header>
         <nav>
             <img class="logo-header" src="/img/ohmyfood@2x.svg" alt="logo of the OhMyFood">
-            <div class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><p>Paris, Belleville</p></div>
+            <div class="location"><i  class="fas fa-map-marker-alt" aria-hidden="true"></i><p>Paris, Belleville</p></div>
         </nav>
     </header>
     <section class="presentation">
@@ -28,63 +28,67 @@
         <a href="#restaurants">Explorer nos restaurants</a>
     </section>
     <section class="stages">
-        <h1>Fonctionnement</h1>
-<ol>
-    <li>Choisissez un restaurant</li>
-    <li>Composez votre menu</li>
-    <li>Dégustez au restaurant</li>
-</ol>
+        <h2>Fonctionnement</h2>
+    <ol>
+        <li><i class="fas fa-mobile-alt" ></i>Choisissez un restaurant</li>
+        <li><i class="fas fa-list-ul" ></i>Composez votre menu</li>
+        <li><i class="fas fa-store" ></i>Dégustez au restaurant</li>
+    </ol>
 
 
     </section>
     <section class="restaurants" id="restaurants">
-        <h1>Restaurants</h1>
-        <div class="card-resto">
-            <a href="#">
+        <h2>Restaurants</h2>
+        <div class="container-resto">
+                <a class="card-resto" href="#">
                 <img src="/img/menilmontant.jpg" alt="photo of a dish in menilmontant  restaurant">
+               <div class="card-buttom">
                 <div class="text-card">
-                    <p>La palette du goût</p>
+                    <p>La  palette du goût</p>
                     <h3>Ménilmontant</h3>
                 </div>
-                <div class="like"></div>
+                <div class="like"><i class="fas fa-heart"></i></div>
+              </div>
                 <div class="label-new"><p>Nouveau</p></div>
-            </a></div>
-            <div class="card-resto">
-                <a href="#">
+                </a>            
+                <a class="card-resto" href="#">
                     <img src="/img/charonne.jpg" alt="photo of a dish in Charonne restaurant">
-                    <div class="text-card">
+                    <div class="card-buttom">
+                        <div class="text-card">
                         <p>La note enchantée</p>
                         <h3>Charonne</h3>
+                        </div>
+                        <div class="like"><i class="fas fa-heart"></i></div>
                     </div>
-                    <div class="like"></div>
                     <div class="label-new"><p>Nouveau</p></div>
-                </a></div>
-                <div class="card-resto">
-                    <a href="#">
+                
+                </a>
+                <a class="card-resto" href="#">
                         <img src="/img/citerouge.jpg" alt="photo of a dish in Cité Rouge restaurant">
+                       <div class="card-buttom">
                         <div class="text-card">
                             <p>À la française</p>
                             <h3>Cité Rouge</h3>
                         </div>
-                        <div class="like"></div>
-                        <div class="label-new"><p>Nouveau</p></div>
-                    </a></div>
-                    <div class="card-resto">
-                        <a href="#">
+                        <div class="like"><i class="fas fa-heart"></i></div>
+                        </div>
+                </a>
+                <a class="card-resto" href="#">
                             <img src="/img/foliemericourt.jpg" alt="photo of a dish in Folie-mericourt restaurant">
-                            <div class="text-card">
+                           <div class="card-buttom"><div class="text-card">
                                 <p>Le délice des sens</p>
                                 <h3>Folie-Méricourt</h3>
                             </div>
-                            <div class="like"></div>
-                            <div class="label-new"><p>Nouveau</p></div>
-                        </a></div>        
+                            <div class="like"><i class="fas fa-heart"></i></div>     
+                            </div> 
+                        </a>          
+        </div>      
     </section>
 <footer>
-<img class="logo-footer" src="/img/ohmyfood@2x.svg" alt="logo of Ohmyfood">
+<p class="logo-footer">ohmyfood</p>
 <ul>
-    <li><a href="#"><strong>Proposer un restaurant</strong> </a></li>
-    <li><a href="#"><strong>Devenir partenaire</strong> </a></li>
+    <li><a href="#"><i class="fas fa-utensils"></i><strong>Proposer un restaurant</strong> </a></li>
+    <li><a href="#"><i class="fas fa-hands-helping"></i><strong>Devenir partenaire</strong> </a></li>
     <li><a href="#">Mentions légales</a></li>
     <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
 </ul>
