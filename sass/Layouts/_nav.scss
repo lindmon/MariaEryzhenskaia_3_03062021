@@ -1,9 +1,9 @@
 nav  {
-    width: 80%;
-    margin: auto;
+    @include section-width;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 2rem;
 }
 .logo-header {
     height: 9rem;

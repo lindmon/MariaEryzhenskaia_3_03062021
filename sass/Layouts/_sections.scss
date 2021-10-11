@@ -43,8 +43,8 @@ ol {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-list-style-type: none;
-counter-reset: compteList;
+    list-style-type: none;
+    counter-reset: compteList;
     li::before {
         text-align: center;
         color: white;
@@ -59,7 +59,8 @@ counter-reset: compteList;
         line-height: 25px;
         width: 25px;
         height: 25px;
-    }
+        }
+
     li{
         width: 322px;
         height: 70px;
@@ -76,20 +77,16 @@ counter-reset: compteList;
             margin-right: 2rem;
             &:hover {
                 color: $primary;
-            }
-        }
-        &:hover {
-            background-color: $touch-active;
-        }
-    }  
+                }
+            } 
+    }    
 }
 /*Restaurants section*/
 
 .restaurants{
     padding-top: 3rem;
     padding-bottom: 3rem;
-    width: 80%;
-    margin: auto;  
+    @include section-width;
     background-color: $grey-main;
     h2{
         display: block;
@@ -97,16 +94,15 @@ counter-reset: compteList;
         margin: auto;
         margin-bottom: 2rem;
         text-align: start;
-    }
-}   
+        }
+    }   
 .container-resto{
-    width: 80%;
-    margin: auto;
+   @include section-width;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
+    }
 .card-resto{
     background-color: white;
     border-radius: 20px;
@@ -127,29 +123,29 @@ counter-reset: compteList;
         top: 10px;
         left: 246px;
         border-radius: 2px;
+        }
     }
-}
-.card-resto img{
+.card-resto__img{
     object-fit: cover;
     width: 338px;
     height:173px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-.text-card{
+    }
+.card-resto__text{
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: 2rem;
-    p{
+    h3{
         font-size: 2rem;
         font-weight: bold;
     }
-    h3{
+    p{
         font-size:2rem;
         font-weight: normal;
+        }
     }
-}
 .card-buttom{
     width: 338px;
     height:78px;
@@ -160,8 +156,8 @@ counter-reset: compteList;
     .like{
         font-size: 3.5rem;
         margin-right: 2rem;
-        background: -webkit-linear-gradient($primary,$secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+        &:hover{
+            fill: $primary;
+        }
+        }
     }
-}

@@ -7,8 +7,7 @@
 footer{
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 80%;
-    margin: auto;
+    @include section-width;
     background-color: $grey-footer;
     ul{
         margin-left: 2rem;

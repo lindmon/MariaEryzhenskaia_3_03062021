@@ -275,9 +275,6 @@ ol li:hover {
 .card-buttom .like {
   font-size: 3.5rem;
   margin-right: 2rem;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .logo-footer {
