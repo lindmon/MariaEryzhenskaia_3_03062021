@@ -14,14 +14,12 @@
         flex-direction: column;
         text-align: center;
     }
-    a{ 
-        color: white;
-        width: 269px;
-        height: 71px;
-        background-image: linear-gradient(to bottom right,$secondary,$primary);
-        border-radius: 50px;
-        box-shadow:$box-shadow;
-        padding-top: 2.3rem;
+    .presentation__link{ 
+       @include btn(269px,71px);
+        &:hover{
+           @include btn-hover;
+
+        }
         
     }
 }
@@ -71,13 +69,16 @@ ol {
         padding-left: 3rem;
         position: relative;
         margin: 1rem;
-        cursor: pointer;
+        &:hover {
+            background-color: $touch-active;
+            & i {
+                color: $primary;
+            }
+
+        }
         i {
             color:$grey-icons;
             margin-right: 2rem;
-            &:hover {
-                color: $primary;
-                }
             } 
     }    
 }
@@ -155,9 +156,26 @@ ol {
     justify-content: space-between;
     .like{
         font-size: 3.5rem;
+        font-weight: 300;
         margin-right: 2rem;
-        &:hover{
-            fill: $primary;
-        }
+        position: relative;
+        z-index: 2;  
+
+        .like-active{
+            position: absolute;
+            font-size: 3.6rem;
+            background: -webkit-linear-gradient($primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+            top: 0;
+            left: -0.1rem;
+            z-index: 3;
+            opacity: 0; 
+            transition: opacity 250ms ease-in-out;
+            transform-origin: bottom;
+            &:hover{
+                opacity: 1;
+            }         
         }
     }
+}

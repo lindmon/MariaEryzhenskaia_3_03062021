@@ -1,0 +1,19 @@
+
+@mixin section-width {
+    width: 80%;
+    margin: auto;
+}
+@mixin btn($width, $height) {
+        color: white;
+        width: $width;
+        height: $height;
+        background-image: linear-gradient(to bottom right,$secondary,$primary);
+        border-radius: 50px;
+        box-shadow:$box-shadow;
+        padding-top: 2.3rem;
+}
+@mixin btn-hover {
+    box-shadow: $box-shadow, $box-shadow,$box-shadow;
+    background-image: linear-gradient(to bottom right,lighten($secondary, 3%),lighten($primary, 3%));
+    
+}

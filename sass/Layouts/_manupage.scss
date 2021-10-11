@@ -1,0 +1,9 @@
+.resto-menu{
+    @include section-width;
+    .resto-menu__img {
+        margin-top: 2rem;
+        object-fit: cover;
+        width: 100%;
+        max-height: 40vh;
+    }
+}

@@ -11,6 +11,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 2rem;
 }
 
 .logo-header {
@@ -85,7 +86,7 @@ li {
   text-align: center;
 }
 
-.presentation a {
+.presentation .presentation__link {
   color: white;
   width: 269px;
   height: 71px;
@@ -95,6 +96,13 @@ li {
   -webkit-box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
           box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
   padding-top: 2.3rem;
+}
+
+.presentation .presentation__link:hover {
+  -webkit-box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15), 0 7px 15px -3px rgba(0, 0, 0, 0.15), 0 7px 15px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15), 0 7px 15px -3px rgba(0, 0, 0, 0.15), 0 7px 15px -3px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff88de), to(#9b63df));
+  background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
 }
 
 /*Stages section*/
@@ -154,20 +162,19 @@ ol li {
   padding-left: 3rem;
   position: relative;
   margin: 1rem;
-  cursor: pointer;
+}
+
+ol li:hover {
+  background-color: #F5EDFF;
+}
+
+ol li:hover i {
+  color: #9356DC;
 }
 
 ol li i {
   color: #7e7e7e;
   margin-right: 2rem;
-}
-
-ol li i:hover {
-  color: #9356DC;
-}
-
-ol li:hover {
-  background-color: #F5EDFF;
 }
 
 /*Restaurants section*/
@@ -228,7 +235,7 @@ ol li:hover {
   border-radius: 2px;
 }
 
-.card-resto img {
+.card-resto__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 338px;
@@ -237,19 +244,19 @@ ol li:hover {
   border-top-right-radius: 20px;
 }
 
-.text-card {
+.card-resto__text {
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 2rem;
 }
 
-.text-card p {
+.card-resto__text h3 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.text-card h3 {
+.card-resto__text p {
   font-size: 2rem;
   font-weight: normal;
 }
@@ -274,7 +281,43 @@ ol li:hover {
 
 .card-buttom .like {
   font-size: 3.5rem;
+  font-weight: 300;
   margin-right: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.card-buttom .like .like-active {
+  position: absolute;
+  font-size: 3.6rem;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 0;
+  left: -0.1rem;
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.card-buttom .like .like-active:hover {
+  opacity: 1;
+}
+
+.resto-menu {
+  width: 80%;
+  margin: auto;
+}
+
+.resto-menu .resto-menu__img {
+  margin-top: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 40vh;
 }
 
 .logo-footer {
