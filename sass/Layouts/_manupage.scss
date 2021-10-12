@@ -1,9 +1,129 @@
 .resto-menu{
     @include section-width;
+
     .resto-menu__img {
         margin-top: 2rem;
         object-fit: cover;
         width: 100%;
-        max-height: 40vh;
+        max-height: 62vh;
+        position: relative;
+    }
+    .resto-menu__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top-left-radius: 40px;
+    border-top-right-radius:40px;
+    background-color:$grey-main;
+    width: 70%;
+    margin: auto;
+    padding-top: 1rem;
+    position: absolute;
+    top: 72%;
+    left: 0.2px;
+    right: -0.2px;
+    height: 87px;
+        .resto-menu_name{
+            font-family: 'Shrikhand', cursive;
+            font-size: 6rem;
+               }
+        .resto-menu__like{
+            font-size: 5rem;
+            position: relative;
+        }
+        .resto-menu__like--filled {
+                position: absolute;
+                font-size: 5.3rem;
+                background: -webkit-linear-gradient($primary, $secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+                top: -0.25rem;
+                left: -0.2rem;
+                z-index: 3;
+                opacity: 0; 
+                transition: opacity 250ms ease-in-out;
+                transform-origin: bottom;
+                    &:hover{
+                    opacity: 1;
+                    } 
+            
+        }
+    }
+}
+
+.dishes{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 87.5%;
+    margin: auto;
+    background-color: $grey-main;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius:40px;
+    margin-bottom: 4rem;
+    box-shadow: $box-shadow;
+    .dishes__type--uppercase{
+        display: block;
+        width: auto;
+        text-transform: uppercase;
+        border-bottom-style: solid;
+        border-color: $tertiary;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        margin: 3rem auto 1rem 33%;
+        padding-bottom: 1rem;
+        
+
+    }
+    .dish__name{
+        padding: 1rem;
+        border-radius: 13px;
+        width: 400px;
+        height: 70px;
+        box-shadow: $box-shadow;
+        margin: 1rem;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .name-container{
+            width:100% ;
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 0.2rem;
+            }
+            p{
+                font-size: 1.9rem;
+            }
+
+        }
+        .dish__price{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        .check-container{
+            // width: 60px;
+            // height: 70px;
+            opacity: 0;
+        }
+    }
+    .resto-menu__btn{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        padding: 2rem;
+        border: none;
+        text-decoration: none;
+        @include btn(200px,60px);
+        font-size: 1.8rem;
+        &:hover{
+            @include btn-hover;
+        }
+        
     }
 }

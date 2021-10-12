@@ -10,7 +10,6 @@
         background-image: linear-gradient(to bottom right,$secondary,$primary);
         border-radius: 50px;
         box-shadow:$box-shadow;
-        padding-top: 2.3rem;
 }
 @mixin btn-hover {
     box-shadow: $box-shadow, $box-shadow,$box-shadow;

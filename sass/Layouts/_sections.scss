@@ -16,6 +16,7 @@
     }
     .presentation__link{ 
        @include btn(269px,71px);
+       padding-top: 2.3rem;
         &:hover{
            @include btn-hover;
 
