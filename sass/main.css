@@ -1,5 +1,30 @@
 /*Colors */
 /*Shadow*/
+@-webkit-keyframes entering {
+  from {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes entering {
+  from {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 nav {
   width: 80%;
   margin: auto;
@@ -548,6 +573,62 @@ ol li i {
           box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15), 0 7px 15px -3px rgba(0, 0, 0, 0.15), 0 7px 15px -3px rgba(0, 0, 0, 0.15);
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ff88de), to(#9b63df));
   background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
+}
+
+/*Animation of a dishes */
+.dish__name:nth-child(2) {
+  -webkit-animation: 1s ease-in-out 63.63636ms entering;
+          animation: 1s ease-in-out 63.63636ms entering;
+}
+
+.dish__name:nth-child(3) {
+  -webkit-animation: 1s ease-in-out 127.27273ms entering;
+          animation: 1s ease-in-out 127.27273ms entering;
+}
+
+.dish__name:nth-child(4) {
+  -webkit-animation: 1s ease-in-out 190.90909ms entering;
+          animation: 1s ease-in-out 190.90909ms entering;
+}
+
+.dish__name:nth-child(5) {
+  -webkit-animation: 1s ease-in-out 254.54545ms entering;
+          animation: 1s ease-in-out 254.54545ms entering;
+}
+
+.dish__name:nth-child(6) {
+  -webkit-animation: 1s ease-in-out 318.18182ms entering;
+          animation: 1s ease-in-out 318.18182ms entering;
+}
+
+.dish__name:nth-child(7) {
+  -webkit-animation: 1s ease-in-out 381.81818ms entering;
+          animation: 1s ease-in-out 381.81818ms entering;
+}
+
+.dish__name:nth-child(8) {
+  -webkit-animation: 1s ease-in-out 445.45455ms entering;
+          animation: 1s ease-in-out 445.45455ms entering;
+}
+
+.dish__name:nth-child(9) {
+  -webkit-animation: 1s ease-in-out 509.09091ms entering;
+          animation: 1s ease-in-out 509.09091ms entering;
+}
+
+.dish__name:nth-child(10) {
+  -webkit-animation: 1s ease-in-out 572.72727ms entering;
+          animation: 1s ease-in-out 572.72727ms entering;
+}
+
+.dish__name:nth-child(11) {
+  -webkit-animation: 1s ease-in-out 636.36364ms entering;
+          animation: 1s ease-in-out 636.36364ms entering;
+}
+
+.dish__name:nth-child(12) {
+  -webkit-animation: 1s ease-in-out 700ms entering;
+          animation: 1s ease-in-out 700ms entering;
 }
 
 .logo-footer {

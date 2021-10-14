@@ -16,3 +16,15 @@
     background-image: linear-gradient(to bottom right,lighten($secondary, 3%),lighten($primary, 3%));
     
 }
+
+@keyframes entering {
+    from {
+        transform: translateY(15%);
+        opacity: 0.2;
+      }
+    
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+}
