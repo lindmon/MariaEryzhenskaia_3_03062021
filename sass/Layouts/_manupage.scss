@@ -5,7 +5,7 @@
         margin-top: 2rem;
         object-fit: cover;
         width: 100%;
-        max-height: 62vh;
+        max-height: 32vh;
         position: relative;
     }
     .resto-menu__header{
@@ -20,7 +20,7 @@
     margin: auto;
     padding-top: 1rem;
     position: absolute;
-    top: 72%;
+    top: 42%;
     left: 0.2px;
     right: -0.2px;
     height: 87px;
@@ -76,11 +76,10 @@
         margin-top: 3rem;
         margin: 3rem auto 1rem 33%;
         padding-bottom: 1rem;
-        
-
-    }
-    .dish__name{
-        padding: 1rem;
+   }
+    .name-container{
+        overflow: hidden;
+        cursor: pointer;
         border-radius: 13px;
         width: 400px;
         height: 70px;
@@ -90,28 +89,69 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .name-container{
-            width:100% ;
-            h3 {
-                font-size: 2rem;
-                margin-bottom: 0.2rem;
-            }
-            p{
-                font-size: 1.9rem;
-            }
+        .check-container{
+            width: 0px;
+            padding: 2.3rem 2rem 2.3rem 2rem;
+            height: 70px;
+            opacity: 0;
+            background-color: $tertiary;
+            color: white;
+            border-bottom-right-radius:13px;
+            border-top-right-radius: 13px;
+            transition:width 250ms ease-in-out 350ms , opacity 250ms ease-in-out 500ms, padding 250ms ease-in-out 350ms;
+             i {
+                transform: rotate(-90deg);
+                transition: all ease-in-out 500ms;
+                transition-delay: 500ms;
+
+             }
 
         }
-        .dish__price{
+        .left-container{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
         }
-        .check-container{
-            // width: 60px;
-            // height: 70px;
-            opacity: 0;
+        &:hover{          
+                & .check-container{
+                opacity: 1;
+                width: 60px;
+                transition-delay: 230ms;
+            
+                & i {
+                transform: rotate(0deg);
+                transition-delay: 230ms;
+                }
+            } 
+              & .choice-left {
+                width: 270px;                
+                transition-delay: 250ms;
+            }
         }
+                .choice-left {
+                    h3 {
+                        font-size: 1.8rem;
+                        margin-bottom: 0.2rem;
+                    }
+                    p{
+                        font-size: 1.7rem;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        
+                    }
+                padding: 1rem 0 1rem 1rem;
+                width: 330px;
+                transition: all 200ms ease-in-out 400ms;
+                }
+                .choice-middle {
+                    padding: 0 0 1.7rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;                    
+                    width: 70px;
+                    font-size: 1.8rem;
+                }
     }
     .resto-menu__btn{
         margin-top: 3rem;

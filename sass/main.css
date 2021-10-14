@@ -317,7 +317,7 @@ ol li i {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-height: 62vh;
+  max-height: 32vh;
   position: relative;
 }
 
@@ -341,7 +341,7 @@ ol li i {
   margin: auto;
   padding-top: 1rem;
   position: absolute;
-  top: 72%;
+  top: 42%;
   left: 0.2px;
   right: -0.2px;
   height: 87px;
@@ -415,8 +415,9 @@ ol li i {
   padding-bottom: 1rem;
 }
 
-.dishes .dish__name {
-  padding: 1rem;
+.dishes .name-container {
+  overflow: hidden;
+  cursor: pointer;
   border-radius: 13px;
   width: 400px;
   height: 70px;
@@ -436,20 +437,29 @@ ol li i {
           justify-content: space-between;
 }
 
-.dishes .dish__name .name-container {
-  width: 100%;
+.dishes .name-container .check-container {
+  width: 0px;
+  padding: 2.3rem 2rem 2.3rem 2rem;
+  height: 70px;
+  opacity: 0;
+  background-color: #99E2D0;
+  color: white;
+  border-bottom-right-radius: 13px;
+  border-top-right-radius: 13px;
+  -webkit-transition: width 250ms ease-in-out 350ms , opacity 250ms ease-in-out 500ms, padding 250ms ease-in-out 350ms;
+  transition: width 250ms ease-in-out 350ms , opacity 250ms ease-in-out 500ms, padding 250ms ease-in-out 350ms;
 }
 
-.dishes .dish__name .name-container h3 {
-  font-size: 2rem;
-  margin-bottom: 0.2rem;
+.dishes .name-container .check-container i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 
-.dishes .dish__name .name-container p {
-  font-size: 1.9rem;
-}
-
-.dishes .dish__name .dish__price {
+.dishes .name-container .left-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,8 +472,58 @@ ol li i {
           justify-content: space-between;
 }
 
-.dishes .dish__name .check-container {
-  opacity: 0;
+.dishes .name-container:hover .check-container {
+  opacity: 1;
+  width: 60px;
+  -webkit-transition-delay: 230ms;
+          transition-delay: 230ms;
+}
+
+.dishes .name-container:hover .check-container i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition-delay: 230ms;
+          transition-delay: 230ms;
+}
+
+.dishes .name-container:hover .choice-left {
+  width: 270px;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+}
+
+.dishes .name-container .choice-left {
+  padding: 1rem 0 1rem 1rem;
+  width: 330px;
+  -webkit-transition: all 200ms ease-in-out 400ms;
+  transition: all 200ms ease-in-out 400ms;
+}
+
+.dishes .name-container .choice-left h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.dishes .name-container .choice-left p {
+  font-size: 1.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dishes .name-container .choice-middle {
+  padding: 0 0 1.7rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 70px;
+  font-size: 1.8rem;
 }
 
 .dishes .resto-menu__btn {
