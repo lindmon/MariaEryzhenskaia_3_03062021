@@ -9,6 +9,10 @@ footer{
     padding-bottom: 2rem;
     @include section-width;
     background-color: $grey-footer;
+    @media (max-width: 640px) {
+        width: 100%;
+        margin: 0;
+    }
     ul{
         margin-left: 2rem;
         margin-top: 1rem;

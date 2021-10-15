@@ -3,7 +3,7 @@
   background-color: white;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -15;
   animation: 3s spinner;
   animation-iteration-count: 1;
@@ -26,6 +26,9 @@
   z-index: 99;
   margin-left: 50%;
   margin-top: 10%;
+  @media (max-width: $mobile){
+    margin-left: 40%;
+  }
 }
 .lds-default div {
   position: absolute;
