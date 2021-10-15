@@ -175,5 +175,7 @@ $anim-delay:$anim-dur/11;
 @for $i from 1 through 11 {
     .dish__name:nth-child(#{$i+1}){
         animation: 1s ease-in-out $i*$anim-delay entering;
+        animation-iteration-count: 1;
+    
     }
 }
