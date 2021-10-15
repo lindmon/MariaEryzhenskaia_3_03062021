@@ -9,6 +9,11 @@ nav  {
         flex-direction: column;
         padding:0;
     }
+    .home-arrow {
+        position: absolute;
+        top: 2.2rem;
+        left: 3rem;
+    }
 }
 .logo-header {
     height: 9rem;
@@ -35,4 +40,5 @@ nav  {
         padding-top: 1.3rem;
 
     }
+    
 }

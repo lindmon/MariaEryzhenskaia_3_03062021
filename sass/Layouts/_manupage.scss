@@ -1,5 +1,9 @@
 .resto-menu{
     @include section-width;
+    @media (max-width: $mobile){
+        width: 100%;
+        margin: 0;
+    }
 
     .resto-menu__img {
         margin-top: 2rem;
@@ -7,6 +11,9 @@
         width: 100%;
         max-height: 32vh;
         position: relative;
+        @media (max-width: $mobile){
+            margin: 0;
+        }
     }
     .resto-menu__header{
         display: flex;
@@ -24,13 +31,24 @@
     left: 0.2px;
     right: -0.2px;
     height: 87px;
+    @media (max-width: $mobile){
+        width: 100%;
+        margin: 0;
+        top: 33%;
+    }
         .resto-menu_name{
             font-family: 'Shrikhand', cursive;
             font-size: 6rem;
+            @media (max-width: $mobile){
+                font-size: 3rem;
+            }
                }
         .resto-menu__like{
             font-size: 5rem;
             position: relative;
+            @media (max-width: $mobile){
+                transform: scale(0.6);
+            }
         }
         .resto-menu__like--filled {
                 position: absolute;
@@ -66,16 +84,24 @@
     border-bottom-right-radius:40px;
     margin-bottom: 4rem;
     box-shadow: $box-shadow;
+    @media (max-width: $mobile){
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius:0;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
     .dishes__type--uppercase{
         display: block;
         width: auto;
         text-transform: uppercase;
         border-bottom-style: solid;
         border-color: $tertiary;
-        margin-bottom: 1rem;
-        margin-top: 3rem;
         margin: 3rem auto 1rem 33%;
         padding-bottom: 1rem;
+        @media (max-width: $mobile){
+            margin-left: 3%;
+        }
    }
     .name-container{
         overflow: hidden;
@@ -89,6 +115,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media (max-width: $mobile){
+            width: 352px;
+            height: 66px;
+        }
         .check-container{
             width: 0px;
             padding: 2.3rem 2rem 2.3rem 2rem;
@@ -126,6 +156,9 @@
               & .choice-left {
                 width: 270px;                
                 transition-delay: 250ms;
+                @media (max-width: $mobile){
+                    width: 222px;
+                }
             }
         }
                 .choice-left {
@@ -143,6 +176,9 @@
                 padding: 1rem 0 1rem 1rem;
                 width: 330px;
                 transition: all 200ms ease-in-out 400ms;
+                @media (max-width: $mobile){
+                    width: 282px;
+                }
                 }
                 .choice-middle {
                     padding: 0 0 1.7rem 0;

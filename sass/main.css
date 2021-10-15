@@ -216,6 +216,12 @@ nav {
   }
 }
 
+nav .home-arrow {
+  position: absolute;
+  top: 2.2rem;
+  left: 3rem;
+}
+
 .logo-header {
   height: 9rem;
 }
@@ -596,6 +602,13 @@ ol li i {
   margin: auto;
 }
 
+@media (max-width: 640px) {
+  .resto-menu {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .resto-menu .resto-menu__img {
   margin-top: 2rem;
   -o-object-fit: cover;
@@ -603,6 +616,12 @@ ol li i {
   width: 100%;
   max-height: 32vh;
   position: relative;
+}
+
+@media (max-width: 640px) {
+  .resto-menu .resto-menu__img {
+    margin: 0;
+  }
 }
 
 .resto-menu .resto-menu__header {
@@ -631,14 +650,35 @@ ol li i {
   height: 87px;
 }
 
+@media (max-width: 640px) {
+  .resto-menu .resto-menu__header {
+    width: 100%;
+    margin: 0;
+    top: 33%;
+  }
+}
+
 .resto-menu .resto-menu__header .resto-menu_name {
   font-family: 'Shrikhand', cursive;
   font-size: 6rem;
 }
 
+@media (max-width: 640px) {
+  .resto-menu .resto-menu__header .resto-menu_name {
+    font-size: 3rem;
+  }
+}
+
 .resto-menu .resto-menu__header .resto-menu__like {
   font-size: 5rem;
   position: relative;
+}
+
+@media (max-width: 640px) {
+  .resto-menu .resto-menu__header .resto-menu__like {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
 }
 
 .resto-menu .resto-menu__header .resto-menu__like--filled {
@@ -687,16 +727,31 @@ ol li i {
           box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 640px) {
+  .dishes {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 0;
+  }
+}
+
 .dishes .dishes__type--uppercase {
   display: block;
   width: auto;
   text-transform: uppercase;
   border-bottom-style: solid;
   border-color: #99E2D0;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
   margin: 3rem auto 1rem 33%;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .dishes .dishes__type--uppercase {
+    margin-left: 3%;
+  }
 }
 
 .dishes .name-container {
@@ -719,6 +774,13 @@ ol li i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  .dishes .name-container {
+    width: 352px;
+    height: 66px;
+  }
 }
 
 .dishes .name-container .check-container {
@@ -776,6 +838,12 @@ ol li i {
           transition-delay: 250ms;
 }
 
+@media (max-width: 640px) {
+  .dishes .name-container:hover .choice-left {
+    width: 222px;
+  }
+}
+
 .dishes .name-container .choice-left {
   padding: 1rem 0 1rem 1rem;
   width: 330px;
@@ -793,6 +861,12 @@ ol li i {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .dishes .name-container .choice-left {
+    width: 282px;
+  }
 }
 
 .dishes .name-container .choice-middle {
