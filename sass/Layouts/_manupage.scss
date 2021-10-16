@@ -41,6 +41,7 @@
             font-size: 6rem;
             @media (max-width: $mobile){
                 font-size: 3rem;
+                font-weight: 200;
             }
                }
         .resto-menu__like{
@@ -90,17 +91,18 @@
         border-bottom-right-radius:0;
         box-shadow: none;
         margin-bottom: 0;
+        padding-top: 0;
     }
     .dishes__type--uppercase{
         display: block;
-        width: auto;
+        width: 43px;
         text-transform: uppercase;
         border-bottom-style: solid;
         border-color: $tertiary;
         margin: 3rem auto 1rem 33%;
         padding-bottom: 1rem;
         @media (max-width: $mobile){
-            margin-left: 3%;
+            margin-left: calc(50% - 176px);
         }
    }
     .name-container{
