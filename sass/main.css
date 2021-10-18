@@ -867,6 +867,9 @@ ol li i {
 .dishes .name-container .choice-left h3 {
   font-size: 1.8rem;
   margin-bottom: 0.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .dishes .name-container .choice-left p {
@@ -923,78 +926,85 @@ ol li i {
 
 /*Animation of a dishes */
 .dish__name:nth-child(2) {
-  -webkit-animation: 1s ease-in-out 63.63636ms entering;
-          animation: 1s ease-in-out 63.63636ms entering;
+  -webkit-animation: 1.2s ease-in-out 91.66667ms entering;
+          animation: 1.2s ease-in-out 91.66667ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(3) {
-  -webkit-animation: 1s ease-in-out 127.27273ms entering;
-          animation: 1s ease-in-out 127.27273ms entering;
+  -webkit-animation: 1.2s ease-in-out 183.33333ms entering;
+          animation: 1.2s ease-in-out 183.33333ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(4) {
-  -webkit-animation: 1s ease-in-out 190.90909ms entering;
-          animation: 1s ease-in-out 190.90909ms entering;
+  -webkit-animation: 1.2s ease-in-out 275ms entering;
+          animation: 1.2s ease-in-out 275ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(5) {
-  -webkit-animation: 1s ease-in-out 254.54545ms entering;
-          animation: 1s ease-in-out 254.54545ms entering;
+  -webkit-animation: 1.2s ease-in-out 366.66667ms entering;
+          animation: 1.2s ease-in-out 366.66667ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(6) {
-  -webkit-animation: 1s ease-in-out 318.18182ms entering;
-          animation: 1s ease-in-out 318.18182ms entering;
+  -webkit-animation: 1.2s ease-in-out 458.33333ms entering;
+          animation: 1.2s ease-in-out 458.33333ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(7) {
-  -webkit-animation: 1s ease-in-out 381.81818ms entering;
-          animation: 1s ease-in-out 381.81818ms entering;
+  -webkit-animation: 1.2s ease-in-out 550ms entering;
+          animation: 1.2s ease-in-out 550ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(8) {
-  -webkit-animation: 1s ease-in-out 445.45455ms entering;
-          animation: 1s ease-in-out 445.45455ms entering;
+  -webkit-animation: 1.2s ease-in-out 641.66667ms entering;
+          animation: 1.2s ease-in-out 641.66667ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(9) {
-  -webkit-animation: 1s ease-in-out 509.09091ms entering;
-          animation: 1s ease-in-out 509.09091ms entering;
+  -webkit-animation: 1.2s ease-in-out 733.33333ms entering;
+          animation: 1.2s ease-in-out 733.33333ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(10) {
-  -webkit-animation: 1s ease-in-out 572.72727ms entering;
-          animation: 1s ease-in-out 572.72727ms entering;
+  -webkit-animation: 1.2s ease-in-out 825ms entering;
+          animation: 1.2s ease-in-out 825ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(11) {
-  -webkit-animation: 1s ease-in-out 636.36364ms entering;
-          animation: 1s ease-in-out 636.36364ms entering;
+  -webkit-animation: 1.2s ease-in-out 916.66667ms entering;
+          animation: 1.2s ease-in-out 916.66667ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .dish__name:nth-child(12) {
-  -webkit-animation: 1s ease-in-out 700ms entering;
-          animation: 1s ease-in-out 700ms entering;
+  -webkit-animation: 1.2s ease-in-out 1008.33333ms entering;
+          animation: 1.2s ease-in-out 1008.33333ms entering;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.dish__name:nth-child(13) {
+  -webkit-animation: 1.2s ease-in-out 1100ms entering;
+          animation: 1.2s ease-in-out 1100ms entering;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }

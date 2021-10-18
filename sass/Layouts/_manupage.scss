@@ -167,6 +167,9 @@
                     h3 {
                         font-size: 1.8rem;
                         margin-bottom: 0.2rem;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
                     }
                     p{
                         font-size: 1.7rem;
@@ -208,12 +211,11 @@
 }
 
 /*Animation of a dishes */
-$anim-dur:700ms;
-$anim-delay:$anim-dur/11;
-@for $i from 1 through 11 {
+$anim-dur:1100ms;
+$anim-delay:$anim-dur/12;
+@for $i from 1 through 12 {
     .dish__name:nth-child(#{$i+1}){
-        animation: 1s ease-in-out $i*$anim-delay entering;
-        animation-iteration-count: 1;
-    
+        animation: 1.2s ease-in-out $i*$anim-delay entering;
+        animation-iteration-count: 1;    
     }
 }
