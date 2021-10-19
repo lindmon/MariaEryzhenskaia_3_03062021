@@ -9,6 +9,7 @@ nav  {
         flex-direction: column;
         padding:0;
     }
+   
     .home-arrow {
         position: absolute;
         top: 2.2rem;
@@ -20,6 +21,9 @@ nav  {
     @media (max-width: $mobile) {
         width: 203px;
         height: 61px;
+    } 
+    @media (min-width:$mobile) and (max-width:$desktop){
+        height: 5rem;
     }
 }
 .location{

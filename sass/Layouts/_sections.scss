@@ -58,6 +58,13 @@
         width: 90%;
         margin-top: 4rem;
     }
+    @media (max-width:$mobile-small){
+        width: 69%;
+    }
+    @media (min-width:$mobile) and (max-width:$desktop){
+        width: auto;
+        text-align: center;
+    }
 }
 ol {
     width: 21%;
@@ -70,6 +77,11 @@ ol {
     @media (max-width: $mobile){
         width: 100%;
         align-items: center;
+    }
+    @media (min-width:$mobile) and (max-width:$desktop){
+        width: 50%;
+        align-items: center;
+
     }
     li::before {
         text-align: center;
@@ -97,6 +109,9 @@ ol {
         padding-left: 3rem;
         position: relative;
         margin: 1rem;
+        @media (max-width:$mobile-small){
+            width: 223px;
+        }
        
         &:hover {
             background-color: $touch-active;
@@ -124,6 +139,10 @@ ol {
         margin: 0;
         width: 100%;
     }
+    @media (min-width:$mobile) and (max-width:$desktop){
+        width: auto;
+        text-align: center;
+    }
     h2{
         display: block;
         width: 15%;
@@ -145,6 +164,9 @@ ol {
         width:100%;
         margin:0;
         }
+        @media (min-width:$mobile) and (max-width:$desktop){
+            width: auto;
+        }
     }
     
 .card-resto{
@@ -155,6 +177,9 @@ ol {
     height:auto;
     margin: 2rem;
     position: relative;
+    @media (max-width:$mobile-small){
+        width: 98%;
+    }
     .label-new{
         position: absolute;
         z-index: 1;
@@ -167,6 +192,9 @@ ol {
         top: 10px;
         left: 246px;
         border-radius: 2px;
+        @media (max-width:$mobile-small){
+            left: 199px;
+        }
         }
     }
 .card-resto__img{
@@ -175,6 +203,9 @@ ol {
     height:173px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    @media (max-width:$mobile-small){
+        width: 284px;
+    }
     }
 .card-resto__text{
     background-color: white;
@@ -197,6 +228,9 @@ ol {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @media (max-width:$mobile-small){
+        width: auto;
+    }
     .like{
         font-size: 3.5rem;
         font-weight: 300;

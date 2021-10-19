@@ -43,12 +43,18 @@
                 font-size: 3rem;
                 font-weight: 200;
             }
+            @media (min-width:$mobile) and (max-width:$desktop){
+                font-size: 3rem;
+            }
                }
         .resto-menu__like{
             font-size: 5rem;
             position: relative;
             @media (max-width: $mobile){
                 transform: scale(0.6);
+            }
+            @media (min-width:$mobile) and (max-width:$desktop){
+                font-size: 3rem;
             }
         }
         .resto-menu__like--filled {
@@ -63,6 +69,9 @@
                 opacity: 0; 
                 transition: opacity 250ms ease-in-out;
                 transform-origin: bottom;
+                @media (min-width:$mobile) and (max-width:$desktop){
+                    font-size: 3.6rem;
+                }
                     &:hover{
                     opacity: 1;
                     } 
@@ -104,6 +113,9 @@
         @media (max-width: $mobile){
             margin-left: calc(50% - 176px);
         }
+        @media (max-width: $mobile-small){
+            margin-left: calc(50% - 145px);
+        }
    }
     .name-container{
         overflow: hidden;
@@ -120,6 +132,9 @@
         @media (max-width: $mobile){
             width: 352px;
             height: 66px;
+        }
+        @media (max-width: $mobile-small){
+            width: 290px;
         }
         .check-container{
             width: 0px;
@@ -161,6 +176,9 @@
                 @media (max-width: $mobile){
                     width: 222px;
                 }
+                @media (max-width: $mobile-small){
+                    width: 160px;
+                }
             }
         }
                 .choice-left {
@@ -180,9 +198,12 @@
                     }
                 padding: 1rem 0 1rem 1rem;
                 width: 330px;
-                transition: all 200ms ease-in-out 400ms;
+                transition: all 130ms ease-in-out 300ms;
                 @media (max-width: $mobile){
                     width: 282px;
+                }
+                @media (max-width: $mobile-small){
+                    width: 220px;
                 }
                 }
                 .choice-middle {
@@ -193,7 +214,8 @@
                     width: 70px;
                     font-size: 1.8rem;
                 }
-    }
+        }
+    
     .resto-menu__btn{
         margin-top: 3rem;
         margin-bottom: 4rem;
