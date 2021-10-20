@@ -145,11 +145,11 @@
             color: white;
             border-bottom-right-radius:13px;
             border-top-right-radius: 13px;
-            transition:width 250ms ease-in-out 350ms , opacity 250ms ease-in-out 500ms, padding 250ms ease-in-out 350ms;
+            transition:width 130ms ease-in 250ms , opacity 80ms ease-in 300ms, padding 130ms ease-in 250ms;
              i {
-                transform: rotate(-90deg);
-                transition: all ease-in-out 500ms;
-                transition-delay: 500ms;
+                transform: rotate(-180deg);
+                transition: all ease-in-out 300ms;
+                transition-delay: 250ms;
 
              }
 
@@ -198,7 +198,7 @@
                     }
                 padding: 1rem 0 1rem 1rem;
                 width: 330px;
-                transition: all 130ms ease-in-out 300ms;
+                transition: all 130ms ease-in 200ms;
                 @media (max-width: $mobile){
                     width: 282px;
                 }

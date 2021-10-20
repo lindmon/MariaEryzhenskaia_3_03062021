@@ -906,17 +906,17 @@ ol li i {
   color: white;
   border-bottom-right-radius: 13px;
   border-top-right-radius: 13px;
-  -webkit-transition: width 250ms ease-in-out 350ms , opacity 250ms ease-in-out 500ms, padding 250ms ease-in-out 350ms;
-  transition: width 250ms ease-in-out 350ms , opacity 250ms ease-in-out 500ms, padding 250ms ease-in-out 350ms;
+  -webkit-transition: width 130ms ease-in 250ms , opacity 80ms ease-in 300ms, padding 130ms ease-in 250ms;
+  transition: width 130ms ease-in 250ms , opacity 80ms ease-in 300ms, padding 130ms ease-in 250ms;
 }
 
 .dishes .name-container .check-container i {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transition: all ease-in-out 500ms;
-  transition: all ease-in-out 500ms;
-  -webkit-transition-delay: 500ms;
-          transition-delay: 500ms;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
 }
 
 .dishes .name-container .left-container {
@@ -967,8 +967,8 @@ ol li i {
 .dishes .name-container .choice-left {
   padding: 1rem 0 1rem 1rem;
   width: 330px;
-  -webkit-transition: all 130ms ease-in-out 300ms;
-  transition: all 130ms ease-in-out 300ms;
+  -webkit-transition: all 130ms ease-in 200ms;
+  transition: all 130ms ease-in 200ms;
 }
 
 .dishes .name-container .choice-left h3 {
