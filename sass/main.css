@@ -473,7 +473,8 @@ ol li {
 
 @media (max-width: 358px) {
   ol li {
-    width: 223px;
+    width: 90%;
+    padding-top: 2.6rem;
   }
 }
 
@@ -587,6 +588,7 @@ ol li i {
   top: 10px;
   left: 246px;
   border-radius: 2px;
+  text-align: center;
 }
 
 @media (max-width: 358px) {
@@ -790,6 +792,13 @@ ol li i {
   transition: opacity 250ms ease-in-out;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
+}
+
+@media (max-width: 640px) {
+  .resto-menu .resto-menu__header .resto-menu__like--filled {
+    top: -0.18rem;
+    left: -0.15rem;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1200px) {

@@ -69,6 +69,10 @@
                 opacity: 0; 
                 transition: opacity 250ms ease-in-out;
                 transform-origin: bottom;
+                @media (max-width: $mobile){
+                    top: -0.18rem;
+                    left: -0.15rem;
+                }
                 @media (min-width:$mobile) and (max-width:$desktop){
                     font-size: 3.6rem;
                 }
