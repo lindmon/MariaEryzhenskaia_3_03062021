@@ -110,8 +110,10 @@ ol {
         position: relative;
         margin: 1rem;
         @media (max-width:$mobile-small){
-            width: 223px;
+            width: 90%;
+            padding-top: 2.6rem;
         }
+        
        
         &:hover {
             background-color: $touch-active;
@@ -192,6 +194,7 @@ ol {
         top: 10px;
         left: 246px;
         border-radius: 2px;
+        text-align: center;
         @media (max-width:$mobile-small){
             left: 199px;
         }
