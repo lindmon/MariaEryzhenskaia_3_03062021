@@ -381,29 +381,14 @@ li {
 }
 
 .stages h2 {
-  width: 15%;
-  margin: auto;
   margin-bottom: 2rem;
-  text-align: start;
+  text-align: center;
 }
 
 @media (max-width: 640px) {
   .stages h2 {
-    width: 90%;
     margin-top: 4rem;
-  }
-}
-
-@media (max-width: 358px) {
-  .stages h2 {
-    width: 69%;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 1200px) {
-  .stages h2 {
-    width: auto;
-    text-align: center;
+    padding-right: 11rem;
   }
 }
 
@@ -635,7 +620,7 @@ ol li i {
   font-weight: normal;
 }
 
-.card-buttom {
+.card-bottom {
   width: 338px;
   height: 78px;
   display: -webkit-box;
@@ -654,20 +639,23 @@ ol li i {
 }
 
 @media (max-width: 358px) {
-  .card-buttom {
+  .card-bottom {
     width: auto;
   }
 }
 
-.card-buttom .like {
+.card-bottom .like {
   font-size: 3.5rem;
   font-weight: 300;
   margin-right: 2rem;
   position: relative;
   z-index: 2;
+  border: none;
+  text-decoration: none;
+  background-color: white;
 }
 
-.card-buttom .like .like-active {
+.card-bottom .like .like-active {
   position: absolute;
   font-size: 3.6rem;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -683,7 +671,7 @@ ol li i {
           transform-origin: bottom;
 }
 
-.card-buttom .like .like-active:hover {
+.card-bottom .like .like-active:hover {
   opacity: 1;
 }
 
@@ -705,7 +693,6 @@ ol li i {
      object-fit: cover;
   width: 100%;
   max-height: 32vh;
-  position: relative;
 }
 
 @media (max-width: 640px) {
@@ -730,22 +717,18 @@ ol li i {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #F6F6F6;
-  width: 70%;
-  margin: auto;
-  padding-top: 1rem;
-  position: absolute;
-  top: 42%;
-  left: 0.2px;
-  right: -0.2px;
+  width: 87.5%;
+  margin: -6rem auto auto auto;
+  padding-top: 3.5rem;
+  position: relative;
   height: 87px;
 }
 
 @media (max-width: 640px) {
   .resto-menu .resto-menu__header {
     width: 100%;
-    margin: 0;
-    top: 33%;
-    height: 66px;
+    margin: -6rem 0 0 0;
+    height: 54px;
   }
 }
 
@@ -770,6 +753,9 @@ ol li i {
 .resto-menu .resto-menu__header .resto-menu__like {
   font-size: 5rem;
   position: relative;
+  text-decoration: none;
+  border: none;
+  background-color: #F6F6F6;
 }
 
 @media (max-width: 640px) {
@@ -819,7 +805,6 @@ ol li i {
 }
 
 .dishes {
-  padding-top: 5rem;
   padding-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,12 +842,13 @@ ol li i {
 }
 
 .dishes .dishes__type--uppercase {
+  padding-top: 1.7rem;
   display: block;
   width: 43px;
   text-transform: uppercase;
   border-bottom-style: solid;
   border-color: #99E2D0;
-  margin: 3rem auto 1rem 33%;
+  margin: 1.5rem auto 1rem 33%;
   padding-bottom: 1rem;
 }
 
@@ -1044,6 +1030,7 @@ ol li i {
   -webkit-box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
           box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .dishes .resto-menu__btn:hover {
