@@ -10,7 +10,6 @@
         object-fit: cover;
         width: 100%;
         max-height: 32vh;
-        position: relative;
         @media (max-width: $mobile){
             margin: 0;
         }
@@ -23,19 +22,15 @@
         border-top-left-radius: 40px;
     border-top-right-radius:40px;
     background-color:$grey-main;
-    width: 70%;
-    margin: auto;
-    padding-top: 1rem;
-    position: absolute;
-    top: 42%;
-    left: 0.2px;
-    right: -0.2px;
+    width: 87.5%;
+    margin: -6rem auto auto auto ;
+    padding-top: 3.5rem;
+    position: relative;
     height: 87px;
     @media (max-width: $mobile){
         width: 100%;
-        margin: 0;
-        top: 33%;
-        height: 66px;
+        margin: -6rem 0 0 0;
+        height: 54px;
     }
         .resto-menu_name{
             font-family: 'Shrikhand', cursive;
@@ -51,6 +46,9 @@
         .resto-menu__like{
             font-size: 5rem;
             position: relative;
+            text-decoration: none;
+            border: none;
+            background-color: $grey-main;
             @media (max-width: $mobile){
                 transform: scale(0.6);
             }
@@ -86,7 +84,6 @@
 }
 
 .dishes{
-    padding-top: 5rem;
     padding-bottom: 3rem;
     display: flex;
     justify-content: center;
@@ -108,12 +105,13 @@
         padding-top: 0;
     }
     .dishes__type--uppercase{
+        padding-top: 1.7rem;
         display: block;
         width: 43px;
         text-transform: uppercase;
         border-bottom-style: solid;
         border-color: $tertiary;
-        margin: 3rem auto 1rem 33%;
+        margin: 1.5rem auto 1rem 33%;
         padding-bottom: 1rem;
         @media (max-width: $mobile){
             margin-left: calc(50% - 176px);
@@ -229,6 +227,7 @@
         text-decoration: none;
         @include btn(200px,60px);
         font-size: 1.8rem;
+        cursor: pointer;
         &:hover{
             @include btn-hover;
         }

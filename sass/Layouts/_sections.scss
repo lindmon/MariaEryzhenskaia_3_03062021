@@ -50,20 +50,11 @@
     }
 }
 .stages h2{
-    width: 15%;
-    margin: auto;
     margin-bottom: 2rem;
-    text-align: start;
+    text-align: center;
     @media (max-width: $mobile){
-        width: 90%;
         margin-top: 4rem;
-    }
-    @media (max-width:$mobile-small){
-        width: 69%;
-    }
-    @media (min-width:$mobile) and (max-width:$desktop){
-        width: auto;
-        text-align: center;
+        padding-right: 11rem;
     }
 }
 ol {
@@ -228,7 +219,7 @@ ol {
         font-weight: normal;
         }
     }
-.card-buttom{
+.card-bottom{
     width: 338px;
     height:78px;
     display: flex;
@@ -243,7 +234,10 @@ ol {
         font-weight: 300;
         margin-right: 2rem;
         position: relative;
-        z-index: 2;  
+        z-index: 2;
+        border: none;
+        text-decoration: none;
+        background-color: white;  
 
         .like-active{
             position: absolute;
