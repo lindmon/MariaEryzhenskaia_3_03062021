@@ -16,7 +16,14 @@
     background-image: linear-gradient(to bottom right,lighten($secondary, 3%),lighten($primary, 3%));
     
 }
-
+@mixin flex ($direction:row, $justify:flex-start, $align-items:stretch){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align-items;
+}
+/*default: raw, no-wrap, flex-start, align-items: stretch,
+*/
 @keyframes entering {
     from {
         transform: translateY(15%);

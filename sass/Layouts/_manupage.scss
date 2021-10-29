@@ -15,10 +15,7 @@
         }
     }
     .resto-menu__header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(row, space-around, center);
         border-top-left-radius: 40px;
     border-top-right-radius:40px;
     background-color:$grey-main;
@@ -86,10 +83,7 @@
 
 .dishes{
     padding-bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column, center, center);
     width: 87.5%;
     margin: auto;
     background-color: $grey-main;
@@ -112,7 +106,7 @@
         text-transform: uppercase;
         border-bottom-style: solid;
         border-color: $tertiary;
-        margin: 1.5rem auto 1rem 33%;
+        margin: 1.5rem auto 1rem calc(50% - 200px);
         padding-bottom: 1rem;
         @media (max-width: $mobile){
             margin-left: calc(50% - 176px);
@@ -130,9 +124,7 @@
         box-shadow: $box-shadow;
         margin: 1rem;
         background-color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex (row, space-between);
         @media (max-width: $mobile){
             width: 352px;
             height: 66px;
@@ -159,9 +151,7 @@
 
         }
         .left-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            @include flex(row,space-between);
         }
         &:hover{          
                 & .check-container{
@@ -213,9 +203,7 @@
                 }
                 .choice-middle {
                     padding: 0 0 1.7rem 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;                    
+                    @include flex(row, center, flex-end);                  
                     width: 70px;
                     font-size: 1.8rem;
                 }

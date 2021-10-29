@@ -1,9 +1,7 @@
 /*Presentation section*/
 
 .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column,flex-start,center);
     padding: 3rem;
     width: 80%;
     margin:2rem auto 0 auto ;
@@ -71,9 +69,7 @@
 ol {
     width: 21%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include flex(column, flex-start, flex-start);
     list-style-type: none;
     counter-reset: compteList;
     @media (max-width: $mobile){
@@ -110,9 +106,7 @@ ol {
         padding-left: 3rem;
         position: relative;
         margin: 1rem;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        @include flex(row, flex-start,center);
         @media (max-width:$mobile-small){
             width: 90%;
         }
@@ -120,8 +114,6 @@ ol {
             font-size: 1.8rem;
             font-weight: 500;
         }
-
-        
        
         &:hover {
             background-color: $touch-active;
@@ -168,9 +160,7 @@ ol {
     }   
 .container-resto{
    @include section-width;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex(row, center, stretch);
     flex-wrap: wrap;
         @media (max-width: $mobile){
         width:100%;
@@ -226,6 +216,9 @@ ol {
     border-bottom-right-radius: 20px;
     margin-left: 2rem;
     text-align: left;
+    @media (max-width:$mobile){
+        margin-left: 1rem;
+    }
     h3{
         font-size: 2rem;
         font-weight: bold;
@@ -238,15 +231,15 @@ ol {
 .card-bottom{
     width: 338px;
     height:78px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, space-between, center);
+    
+    
     @media (max-width:$mobile-small){
         width: auto;
     }
     @media (max-width:$mobile){
         height: 60px;
+        margin-bottom: 1rem;
     }
     .like{
         font-size: 2.5rem;
