@@ -3,6 +3,9 @@
     color: white;
     margin-left: 2rem;
     font-size: 2.6rem;
+    @media (max-width: $mobile){
+        font-size: 2rem ;
+    }
 }
 footer{
     padding-top: 2rem;
@@ -37,7 +40,8 @@ footer{
         margin-right: 1rem;
     }
     li:nth-child(2) i{
-        transform: scaleX(0.8);
+        transform: scaleX(0.6);
+        transform-origin: left;
         margin-right: 0.4rem;
         
     }

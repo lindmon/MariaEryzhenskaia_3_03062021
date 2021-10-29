@@ -7,7 +7,7 @@
         color: white;
         width: $width;
         height: $height;
-        background-image: linear-gradient(to bottom right,$secondary,$primary);
+        background-image: linear-gradient(to bottom right, $secondary,$primary);
         border-radius: 50px;
         box-shadow:$box-shadow;
 }

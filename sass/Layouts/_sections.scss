@@ -14,6 +14,14 @@
         padding: 3rem 1rem 4rem 1rem;
 
     }
+    h1 {
+        font-weight: 700;
+        font-size: 2.6rem;
+    }
+    p{
+        font-weight: 200;
+        font-size: 1.9rem;
+    }
     h1,p,a {
         display: inline-flex;
         margin: 2rem;
@@ -27,10 +35,11 @@
        @include btn(269px,71px);
        padding-top: 2.3rem;
        @media (max-width: $mobile){
-           width: 257px;
+           width: 215px;
            height: 50px;
            padding-top: 1.5rem;
            margin: 2rem 2rem;
+           font-size: 1.75rem;
        }
         &:hover{
            @include btn-hover;
@@ -51,10 +60,12 @@
 }
 .stages h2{
     margin-bottom: 2rem;
+    margin-left:1.5rem ;
     text-align: center;
     @media (max-width: $mobile){
-        margin-top: 4rem;
-        padding-right: 11rem;
+        margin-top: 5.1rem;
+        padding-right: 17.6rem;
+        font-size: 2.6rem;
     }
 }
 ol {
@@ -96,16 +107,18 @@ ol {
         background-color: $grey-main;
         box-shadow: $box-shadow;
         border-radius: 20px;
-        padding-top: 2.2rem;
         padding-left: 3rem;
         position: relative;
         margin: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         @media (max-width:$mobile-small){
             width: 90%;
-            padding-top: 2.6rem;
         }
-        @media (max-width:$mobile){
-            padding-top: 2.6rem;;
+        @media (max-width:$mobile){ 
+            font-size: 1.8rem;
+            font-weight: 500;
         }
 
         
@@ -142,12 +155,14 @@ ol {
     }
     h2{
         display: block;
-        width: 15%;
         margin: auto;
         margin-bottom: 2rem;
-        text-align: start;
+        text-align: center;
         @media (max-width: $mobile){
             width: 90%;
+            padding-right: 22rem;
+            margin-top:2rem;
+            font-size: 2.65rem;
         }
         }
     }   
@@ -174,8 +189,8 @@ ol {
     height:auto;
     margin: 2rem;
     position: relative;
-    @media (max-width:$mobile-small){
-        width: 98%;
+    @media (max-width: $mobile){
+        margin: 1rem;
     }
     .label-new{
         position: absolute;
@@ -210,6 +225,7 @@ ol {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: 2rem;
+    text-align: left;
     h3{
         font-size: 2rem;
         font-weight: bold;
@@ -229,8 +245,11 @@ ol {
     @media (max-width:$mobile-small){
         width: auto;
     }
+    @media (max-width:$mobile){
+        height: 60px;
+    }
     .like{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 300;
         margin-right: 2rem;
         position: relative;
@@ -241,12 +260,12 @@ ol {
 
         .like-active{
             position: absolute;
-            font-size: 3.6rem;
+            font-size: 2.5rem;
             background: -webkit-linear-gradient($primary, $secondary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
             top: 0;
-            left: -0.1rem;
+            left: 0;
             z-index: 3;
             opacity: 0; 
             transition: opacity 250ms ease-in-out;

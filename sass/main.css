@@ -228,7 +228,7 @@ nav .home-arrow {
 
 @media (max-width: 640px) {
   .logo-header {
-    width: 203px;
+    width: 165px;
     height: 61px;
   }
 }
@@ -245,11 +245,16 @@ nav .home-arrow {
 
 .location p {
   display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4d4d4d;
 }
 
 .location i {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
+  color: #4d4d4d;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 640px) {
@@ -260,7 +265,8 @@ nav .home-arrow {
     text-align: center;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding-top: 1.3rem;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
   }
 }
 
@@ -321,6 +327,16 @@ li {
   }
 }
 
+.presentation h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+.presentation p {
+  font-weight: 200;
+  font-size: 1.9rem;
+}
+
 .presentation h1, .presentation p, .presentation a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -353,10 +369,11 @@ li {
 
 @media (max-width: 640px) {
   .presentation .presentation__link {
-    width: 257px;
+    width: 215px;
     height: 50px;
     padding-top: 1.5rem;
     margin: 2rem 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -382,13 +399,15 @@ li {
 
 .stages h2 {
   margin-bottom: 2rem;
+  margin-left: 1.5rem;
   text-align: center;
 }
 
 @media (max-width: 640px) {
   .stages h2 {
-    margin-top: 4rem;
-    padding-right: 11rem;
+    margin-top: 5.1rem;
+    padding-right: 17.6rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -450,22 +469,30 @@ ol li {
   -webkit-box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
           box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding-top: 2.2rem;
   padding-left: 3rem;
   position: relative;
   margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 358px) {
   ol li {
     width: 90%;
-    padding-top: 2.6rem;
   }
 }
 
 @media (max-width: 640px) {
   ol li {
-    padding-top: 2.6rem;
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }
 
@@ -509,15 +536,17 @@ ol li i {
 
 .restaurants h2 {
   display: block;
-  width: 15%;
   margin: auto;
   margin-bottom: 2rem;
-  text-align: start;
+  text-align: center;
 }
 
 @media (max-width: 640px) {
   .restaurants h2 {
     width: 90%;
+    padding-right: 22rem;
+    margin-top: 2rem;
+    font-size: 2.65rem;
   }
 }
 
@@ -561,9 +590,9 @@ ol li i {
   position: relative;
 }
 
-@media (max-width: 358px) {
+@media (max-width: 640px) {
   .card-resto {
-    width: 98%;
+    margin: 1rem;
   }
 }
 
@@ -608,6 +637,7 @@ ol li i {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 2rem;
+  text-align: left;
 }
 
 .card-resto__text h3 {
@@ -644,8 +674,14 @@ ol li i {
   }
 }
 
+@media (max-width: 640px) {
+  .card-bottom {
+    height: 60px;
+  }
+}
+
 .card-bottom .like {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin-right: 2rem;
   position: relative;
@@ -657,12 +693,12 @@ ol li i {
 
 .card-bottom .like .like-active {
   position: absolute;
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   top: 0;
-  left: -0.1rem;
+  left: 0;
   z-index: 3;
   opacity: 0;
   -webkit-transition: opacity 250ms ease-in-out;
@@ -739,8 +775,9 @@ ol li i {
 
 @media (max-width: 640px) {
   .resto-menu .resto-menu__header .resto-menu_name {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 200;
+    margin-left: 1rem;
   }
 }
 
@@ -975,7 +1012,7 @@ ol li i {
 
 .dishes .name-container .choice-left h3 {
   font-size: 1.8rem;
-  margin-bottom: 0.2rem;
+  margin: 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -983,6 +1020,7 @@ ol li i {
 
 .dishes .name-container .choice-left p {
   font-size: 1.7rem;
+  margin: 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -1132,6 +1170,12 @@ ol li i {
   font-size: 2.6rem;
 }
 
+@media (max-width: 640px) {
+  .logo-footer {
+    font-size: 2rem;
+  }
+}
+
 footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1175,8 +1219,10 @@ footer i {
 }
 
 footer li:nth-child(2) i {
-  -webkit-transform: scaleX(0.8);
-          transform: scaleX(0.8);
+  -webkit-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   margin-right: 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */
